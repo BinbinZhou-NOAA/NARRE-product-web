@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title> NCEP Time-Lagged North America Rapid Refresh Ensemble (NARRE-TL),NOAA/NWS/NCEP/EMC </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../js/style.css"></link>
+<script language="JavaScript" src="../js/narre_reg.js"> </script>
+<script language="JavaScript">
+<!--
+                                                                                                                                  
+//-->
+                                                                                                                                  
+</script>
+</head>
+                                                                                                                                  
+<body  border=0 bgcolor="DDDDDD"  text="000000" background="../js/dirbkgnd.gif"  onLoad="javascript:load_image(document.form1)" >
+                                                                                                                                  
+<img src="../js/noaa_logo.gif" height=60 width=65><img src="../js/nws_logo.gif" height=60 width=65> <img src="../js/ncep_80.gif" height=55 width=75> <br>
+<font color="Blue" size=+2> NCEP  Time-Lagged N. America Rapid Refresh Ensemble System (NARRE-TL) </font> 
+<br><br>
+                                                                                                                                  
+<table bgcolor="BBBBBB" frame="below" >                                                                                                                 
+<form name='form1'>
+
+<tr>
+<td><a href="http://www.emc.ncep.noaa.gov/mmb/SREF_avia/FCST/NARRE_Alaska/web_site/html/icing.html">Go to Alaska </a> 
+&nbsp 
+
+Product
+<select name="type" onchange='location=this.form.type.options[this.form.type.selectedIndex].value'>
+<option value="icing.html" > Icing
+<option value="cat.html" > Turbulence
+<option value="ceiling.html" > Ceiling
+<option value="visib.html" > Visibility
+<option value="fltr.html" > Flight Restr
+<option value="fog.html" > Fog (test)
+<option value="wind.html" selected > Wind/Gust
+<option value="conv.html" > Convection
+<option value="refl.html" > Reflectivity
+<option value="prcp.html" > Precip type
+<option value="frzh.html" > Freezing height
+<option value="apcp3hr.html" > 3hr Precip
+<option value="apcp6hr.html" > 6hr Precip
+
+</select>
+&nbsp
+
+
+Date
+<select name="dy" onchange="load_image(this.form)">
+<option value="20221118" selected>20221118  
+<option value="20221117" style="color:red"> 20221117  
+</select>
+&nbsp
+
+Cycle
+<select name="cyc" onchange="load_image(this.form)">
+ <option value=16 style='color:black' selected > 16Z <option value=15 style='color:black' > 15Z <option value=14 style='color:black' > 14Z <option value=13 style='color:black' > 13Z <option value=12 style='color:black' > 12Z <option value=11 style='color:black' > 11Z <option value=10 style='color:black' > 10Z <option value=09 style='color:black' > 09Z <option value=08 style='color:black' > 08Z <option value=07 style='color:black' > 07Z <option value=06 style='color:black' > 06Z <option value=05 style='color:black' > 05Z <option value=04 style='color:black' > 04Z <option value=03 style='color:black' > 03Z <option value=02 style='color:black' > 02Z <option value=01 style='color:black' > 01Z <option value=00 style='color:black' > 00Z
+</select>
+&nbsp
+
+
+Region
+<select name="reg" onchange="load_image(this.form)">
+<option value="us" selected> CONUS
+<option value="ne" > N. East
+<option value="se" > S. East
+<option value="mw" > Mid West
+<option value="ms" > South
+<option value="nw" > N. West
+<option value="sw" > S. West
+<option value="zny" > CWSU-ZNY(New York)
+<option value="zdc" > CWSU-ZDC(DC)
+<option value="zhu" > CWSU-ZHU(Houston)
+<option value="zau" > CWSU-ZAU(Chicago)
+<option value="zoa" > CWSU-ZOA(Oakland)
+<option value="sco" > South Colorado 
+</select>
+&nbsp
+
+Threshold 
+<select name="prod" onchange="load_image(this.form)">
+<option value=llws > Mean/spread: Low level wind shear <option value=prb_llws.gt.20knt > Prob: LLWS > 20 knots/2000ft <option value=prb_jet35000.gt.60knt > Prob: > 60 knots at 35000ft <option value=prb_jet35000.gt.80knt > Prob: > 80 knots at 35000ft <option value=prb_jet35000.gt.100knt > Prob: > 100 knots at 35000ft <option value=prb_jet15000.gt.60knt > Prob: > 60 knots at 15000ft <option value=prb_jet15000.gt.80knt > Prob: > 80 knots at 15000ft <option value=prb_jet15000.gt.100knt > Prob: > 100 knots at 15000ft   <option value=prb_jet4500.gt.20knt > Prob: > 20 knots at 4500ft <option value=prb_jet4500.gt.40knt > Prob: > 40 knots at 4500ft <option value=prb_jet4500.gt.60knt > Prob: > 60 knots at 4500ft      <option value=prb_jet10.gt.20knt > Prob: > 20 knots at Surface <option value=prb_jet10.gt.40knt > Prob: > 40 knots at Surface <option value=prb_jet10.gt.60knt > Prob: > 60 knots at Surface
+</select>
+&nbsp
+
+</tr>
+</form>
+
+
+<form name='form2'>
+<tr >
+<td colspan=4 bgcolor="#DDDDDD">
+&nbsp Select speed:
+<select name="spd">
+ <option selected>normal
+ <option>fast
+ <option>slow
+</select>
+&nbsp
+ Animation  <input  type="checkbox" name="timerBox"  onClick="javascript:get_speed(this.form);javascript:get_i();javascript:animation()">
+&nbsp  
+ <input  type="button" name="fst" value="|<" onClick="javascript:rewind()">
+ <input  type="button" name="prv" value="<" onClick="javascript:prev()">
+ <input  type="button" name="nxt" value=">" onClick="javascript:next()">
+ <input  type="button" name="lst" value=">|" onClick="javascript:last()">
+&nbsp   
+&nbsp <a href=mailto:Binbin.Zhou@noaa.gov>Email comments</a>
+&nbsp <a href="http://www.emc.ncep.noaa.gov/mmb/SREF/SREF.html">SREF Home </a>
+&nbsp <a href="http://nomads.ncep.noaa.gov/pub/data/nccf/com/rap/prod/narre.20221118/ensprod/"> Get data </a>
+&nbsp   
+</td>
+</tr>
+
+<tr>
+<td colspan=4>
+     <img src="" name="my_image" width=1100 height=850>
+</td>
+</tr>
+
+<tr>
+<td colspan=6>
+  <IMG SRC="https://www.emc.ncep.noaa.gov/emc/pages/disclaimer/disclaimer_small.png" width=1100 height=80>
+</td>
+</tr>
+
+</form>
+</table>
+
+
+
+</body>
+</html>
+
